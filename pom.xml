@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>arkham_asylum</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Define your project name and description -->
+    <name>Arkham Asylum</name>
+    <description>We just want to track Gotham's greatest villains breaking out from the asylum</description>
+
+    <!-- Maven definition from this artifact will be used as a starting point, so
+         that you don't have to fully define dependencies that are standard across all
+         spring boot projects. You will have to mention dependencies you need though -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.1.RELEASE</version>
+    </parent>
+
+    <!-- Mention all the dependencies you need in this project -->
+    <dependencies>
+        <!-- Spring boot starters allow you to easily import a set of dependencies you would usually need when
+            you're trying to add something. For example annotations, JSON library, etc. for REST API -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!-- Explicitly define your Java requirements here, instead of relying on defaults -->
+    <properties>
+        <java.version>1.9</java.version>
+    </properties>
+
+</project>
